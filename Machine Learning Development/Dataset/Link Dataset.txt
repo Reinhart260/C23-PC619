@@ -1,0 +1,6 @@
+Link Dataset Fauna :
+https://www.kaggle.com/datasets/antoreepjana/animals-detection-images-dataset?select=train
+
+Link Dataset Flora :
+https://data.mendeley.com/datasets/s82j8dh4rr
+https://www.kaggle.com/datasets/alxmamaev/flowers-recognition
