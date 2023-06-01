@@ -26,7 +26,7 @@ Load images from Modified Directory that we host to Google Drive
 ## 4. Training
 - Using SparseCategoricalCrossentropy as loss
 - Using RMSprop(learning_rate=1e-4) as optimizer
-- Training with 10 epochs
+- Training with 100 epochs
 - From the result, got:
 
   - loss: %
