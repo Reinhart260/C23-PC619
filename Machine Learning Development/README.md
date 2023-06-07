@@ -6,9 +6,10 @@ Load images from Modified Directory that we host to Google Drive
 ## 2. Pre-processing Image
 - Rescale and load images using Keras ImageGenerator
 
-* Defining target and feature from existing train and test Directory with Generated
+* Defining target and feature from existing train, test and validation Directory with Generated
       
       feature, target = (train_data_gen)
+      feature, target = (val_data_gen)
       feature, target = (test_data_gen)
       
 + Resizing the entire image into 224x224 
