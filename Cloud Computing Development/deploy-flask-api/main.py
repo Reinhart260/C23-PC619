@@ -10,7 +10,7 @@ model = joblib.load("iris_model.joblib")
 
 @app.route("/")
 def hello_world():
-    return("Hello, World")
+    return("Hello, World!")
 
 @app.route("/predict", methods=["POST"])
 def predict():
