@@ -1,5 +1,6 @@
 
-<img src="https://github.com/Reinhart260/C23-PC619/assets/121779270/a7138e4c-52a8-4e54-a9ee-91fe8033e415.png)" width="100" height="100">
+<img src="https://github.com/Reinhart260/C23-PC619/assets/121779270/a7138e4c-52a8-4e54-a9ee-91fe8033e415.png)" width="100" height="100" align="center">
+<p align="center"> FEDU App</p>
 <p>Project Name		: “Application for Introducing Flora and Fauna to Help Children Explore the Surrounding Environment using Game Based Learning Method” </P>
 <p>Team ID		: C23-PC619</P>
 <p>Team Member		: </P>
