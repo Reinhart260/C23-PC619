@@ -1,7 +1,9 @@
 # Flora and Fauna Model
 The project is based from Google Colab (due to limited system requirements of our laptop/PC). Using Machine Learning with Tensorflow as framework to Classify the flora and fauna.
+      https://colab.research.google.com/drive/1Gxl8V5Z4sF0dQ6BoBd-xtKQvbrcddFkf?usp=sharing
 ## 1. Image Loading from Directory
 Load images from Modified Directory that we host to Google Drive
+      https://drive.google.com/drive/folders/1V6YU2dqBAmc9COvpMZGoGLjr9sA8yaLS?usp=sharing
 
 ## 2. Pre-processing Image
 - Rescale and load images using Keras ImageGenerator
