@@ -16,6 +16,7 @@ Load images from Modified Directory that we host to Google Drive
 
 ## 3. Modelling
 - Using ILSVRC pre-trained models VGG16 to make model accuracy better.
+      https://drive.google.com/drive/folders/1T38ALDAgf2wSevWuunrcj_I1JrLimjrH?usp=sharing
 - Added more layer too to model.Sequential to make model accuracy more better:
     * Added Flatten layer(input_shape)
     * Added Dense(units=100, activation=keras.layers.LeakyReLU(alpha=0.3)) layer
@@ -30,10 +31,10 @@ Load images from Modified Directory that we host to Google Drive
 - Training with 100 epochs
 - From the result, got:
 
-  - loss: %
-  - accuracy: %
-  - val_loss: %
-  - val_accuracy: %
+  - loss: 31%
+  - accuracy: 89%
+  - val_loss: 66%
+  - val_accuracy: 81%
 
 ## 5. Saved the Model to Google Drive
 Then, saved the model (*.h5 format) to Google Drive (saved only the best model to Google Drive)
