@@ -1,4 +1,7 @@
-<p>Project Name		: “Application for Introducing Flora and Fauna to Help Children Explore the Surrounding Environment using Game Based Learning Method” </P>
+<p align="center"> <img src="https://github.com/Reinhart260/C23-PC619/assets/121779270/85f0f1a3-42d1-470d-8f21-06c2209291fe.png)" width="250" height="250"></p>
+<p align="center"><b>FEDU App</b></p>
+<p align="center">“Application for Introducing Flora and Fauna to Help Children Explore the Surrounding Environment using Game Based Learning Method” </P>
+
 <p>Team ID		: C23-PC619</P>
 <p>Team Member		: </P>
 <li>(ML) M251DSX0157 	- Azka Faza Dzulqarnain</li>   		
