@@ -1,31 +1,45 @@
-#Define Library
+import os
+os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'
 
-import json
-import joblib
-from flask import Flask, request
+import io
+import numpy as np
+import tensorflow as tf
+from tensorflow import keras
+from PIL import Image
 
+from flask import Flask, request, jsonify
+
+    # Import model 
+model = keras.models.load_model("model.h5")
+
+    # Prediction function
+def predict(x):
+
+    predictions = model(x)
+    pred = np.argmax(predictions, axis=1)
+    return pred
+
+    # Initialize Flask server with error handling
 app = Flask(__name__)
 
-model = joblib.load("iris_model.joblib")
+@app.route("/", methods=["GET", "POST"])
+def index():
+    if request.method == "POST":
+        file = request.files.get('file')
+        if file is None or file.filename == "":
+            return jsonify({"error": "no file"})
 
-@app.route("/")
-def hello_world():
-    return("Hello, World!")
+        try:
+            image_bytes = file.read()
+            img = Image.open(io.BytesIO(image_bytes))
+            prediction = predict(img)
+            data = {"prediction": str(prediction)}
+            return jsonify(data)
+        except Exception as e:
+            return jsonify({"error": str(e)})
 
-@app.route("/predict", methods=["POST"])
-def predict():
-    request_json = request.json
+    return "OK"
 
-    prediction = model.predict(request_json.get("data"))
-    prediction_string = [str(d) for d in prediction]
 
-    response_json = {
-        "data": request_json.get("data"),
-        "prediction": list(prediction_string)
-    }
-
-    return json.dumps(response_json)
-
-if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=5000)
-
+if __name__ == "__main__":
+    app.run(debug=True)
