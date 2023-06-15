@@ -1,7 +1,9 @@
 # Flora and Fauna Model
 The project is based from Google Colab (due to limited system requirements of our laptop/PC). Using Machine Learning with Tensorflow as framework to Classify the flora and fauna.
+      https://colab.research.google.com/drive/1Gxl8V5Z4sF0dQ6BoBd-xtKQvbrcddFkf?usp=sharing
 ## 1. Image Loading from Directory
 Load images from Modified Directory that we host to Google Drive
+      https://drive.google.com/drive/folders/1V6YU2dqBAmc9COvpMZGoGLjr9sA8yaLS?usp=sharing
 
 ## 2. Pre-processing Image
 - Rescale and load images using Keras ImageGenerator
@@ -16,6 +18,7 @@ Load images from Modified Directory that we host to Google Drive
 
 ## 3. Modelling
 - Using ILSVRC pre-trained models VGG16 to make model accuracy better.
+      https://drive.google.com/drive/folders/1T38ALDAgf2wSevWuunrcj_I1JrLimjrH?usp=sharing
 - Added more layer too to model.Sequential to make model accuracy more better:
     * Added Flatten layer(input_shape)
     * Added Dense(units=100, activation=keras.layers.LeakyReLU(alpha=0.3)) layer
@@ -30,10 +33,10 @@ Load images from Modified Directory that we host to Google Drive
 - Training with 100 epochs
 - From the result, got:
 
-  - loss: %
-  - accuracy: %
-  - val_loss: %
-  - val_accuracy: %
+  - loss: 31%
+  - accuracy: 89%
+  - val_loss: 66%
+  - val_accuracy: 81%
 
 ## 5. Saved the Model to Google Drive
 Then, saved the model (*.h5 format) to Google Drive (saved only the best model to Google Drive)
