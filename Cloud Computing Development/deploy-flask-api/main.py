@@ -1,26 +1,31 @@
 import os
-os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'
 
+
+
+os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'
+import keras
 import io
 import numpy as np
-import tensorflow as tf
-from tensorflow import keras
 from PIL import Image
 
 from flask import Flask, request, jsonify
 
-    # Import model 
-model = keras.models.load_model("model.h5")
+# Import model
 
-    # Prediction function
+
+model = keras.models.load_model("model_fc.h5")
+
+# Prediction function
 def predict(x):
-
     predictions = model(x)
     pred = np.argmax(predictions, axis=1)
     return pred
 
     # Initialize Flask server with error handling
+
+
 app = Flask(__name__)
+
 
 @app.route("/", methods=["GET", "POST"])
 def index():
