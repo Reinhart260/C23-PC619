@@ -41,7 +41,7 @@ def index():
             image_bytes = file.read()
             img = io.BytesIO(image_bytes)
             prediction = predict(img)
-            class_name = ['Butterflies', 'Chickens', 'Daisy', 'Dandelion', 'Duck', 'Elephants', 'Fish', 'Frog', 'Horses', 'Monkey', 'Rose', 'Snake', 'Spider', 'Squirells', 'Sunflower', 'Tulip']
+            class_name = ['Butterfly', 'Chicken', 'Daisy', 'Dandelion', 'Duck', 'Elephant', 'Fish', 'Frog', 'Horse', 'Monkey', 'Rose', 'Snake', 'Spider', 'Squirrel', 'Sunflower', 'Tulip']
             pred = class_name[np.argmax(prediction)]
             data = {"prediction": pred}
             return jsonify(data)
