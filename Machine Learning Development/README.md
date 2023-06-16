@@ -41,3 +41,4 @@ Load images from Modified Directory that we host to Google Drive
 
 ## 5. Saved the Model to Google Drive
 Then, saved the model (*.h5 format) to Google Drive (saved only the best model to Google Drive)
+https://drive.google.com/drive/folders/1tFEo7ULzmIuvABx_LBXwAxO7mdN50mFD?usp=sharing
