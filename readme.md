@@ -86,7 +86,7 @@ The project is based from Google Colab (due to limited system requirements of ou
  		
 - (ML) M304DSY0547 	- [Yaasintha La Jopin Arisca Corpputy](https://www.linkedin.com/in/yaasintha/) - [Github](https://github.com/yaasinthariesca)
 
-- (ML) M132DKX4965	- Arief Rizqie Putrananda
+- (ML) M132DKX4965	- Arief Rizqie Putrananda - [Github](https://github.com/urboyrip)
 
 - (CC) C303DSX2003 	- Reinhart Untoro
 
