@@ -51,6 +51,23 @@ The project is based from Google Colab (due to limited system requirements of ou
      https://drive.google.com/drive/folders/1tFEo7ULzmIuvABx_LBXwAxO7mdN50mFD?usp=sharing
 
 # Cloud Computing Documentation
+## 1. Steps and Requirements to test API in local host:
+### Requirements:
+<li>Have pycharm(we use latest version)</li>
+<li>Have python(we use latest version)</li>
+<li>Have postman</li>
+<li>Have downloaded the zip and extracted it from https://github.com/Reinhart260/C23-PC619.git</li>
+
+
+### Steps:
+<li>make a new empty folder in local disk (C:)</li>
+<li>create new project in pycharm(location in newly created folder before in local disk (C:) directory), wait until setup from pycharm completed</li>
+<li>copy the main.py, model_fc.h5, and requirements.txt files from deploy-flask-api in Cloud Computing Development folder from extracted zip before and paste to the new project location folder</li>
+<li>install the package requirements from requirements.txt</li>
+<li>open terminal and type python main.py command</li>
+<li>copy the URL in the local host and paste it in Postman</li>
+<li>test method POST in Postman, with body as form-data, file-type as file, key as file, and value choose downloaded image from https://drive.google.com/drive/folders/1V6YU2dqBAmc9COvpMZGoGLjr9sA8yaLS?usp=sharing with flora and fauna included in variable class_name in main.py(GET method will be "OK" as the output)</li>
+<li>click send and the output will be showed(example: { "prediction": "Chicken" })</li>
 
 # Our Team
 <p>Team ID		: C23-PC619</P>
