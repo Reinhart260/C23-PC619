@@ -18,9 +18,9 @@ The project is based from Google Colab (due to limited system requirements of ou
 
     * Defining target and feature from existing train, test and validation Directory with Generated
       
-      feature, target = (train_data_gen)
-      feature, target = (val_data_gen)
-      feature, target = (test_data_gen)
+           feature, target = (train_data_gen)
+           feature, target = (val_data_gen)
+           feature, target = (test_data_gen)
       
     + Resizing the entire image into 224x224 
 
@@ -28,12 +28,12 @@ The project is based from Google Colab (due to limited system requirements of ou
      - Using ILSVRC pre-trained models VGG16 to make model accuracy better.
       https://drive.google.com/drive/folders/1T38ALDAgf2wSevWuunrcj_I1JrLimjrH?usp=sharing
      - Added more layer too to model.Sequential to make model accuracy more better:
-      * Added Flatten layer(input_shape)
-      * Added Dense(units=100, activation=keras.layers.LeakyReLU(alpha=0.3)) layer
-      * Added Dropout(units=0.5) layer
-      * Added more Dense(units=50, activation=keras.layers.LeakyReLU(alpha=0.3)) layer
-      * Added Dropout(units=0.3) layer
-      * Added output layer Dense(units=num_classes, activation='softmax')
+          - Added Flatten layer(input_shape)
+          - Added Dense(units=100, activation=keras.layers.LeakyReLU(alpha=0.3)) layer
+          - Added Dropout(units=0.5) layer
+          - Added more Dense(units=50, activation=keras.layers.LeakyReLU(alpha=0.3)) layer
+          - Added Dropout(units=0.3) layer
+          - Added output layer Dense(units=num_classes, activation='softmax')
 
 - ## 4. Training
      - Using SparseCategoricalCrossentropy as loss
@@ -44,7 +44,7 @@ The project is based from Google Colab (due to limited system requirements of ou
         - loss: 31%
         - accuracy: 89%
         - val_loss: 66%
-      - val_accuracy: 81%
+        - val_accuracy: 81%
 
 - ## 5. Saved the Model to Google Drive
      Then, saved the model (*.h5 format) to Google Drive (saved only the best model to Google Drive)
@@ -73,10 +73,15 @@ The project is based from Google Colab (due to limited system requirements of ou
 
 # Our Team
 <p>Team ID		: C23-PC619</P>
-<p>Team Member		: </P>
-<li>(ML) M251DSX0157 	- Azka Faza Dzulqarnain</li>   		
-(ML) M304DSY0547 	- [Yaasintha La Jopin Arisca Corpputy](https://github.com/yaasinthariesca)
-<li>(ML) M132DKX4965	- Arief Rizqie Putrananda 			</li>
-<li>(CC) C303DSX2003 	- Reinhart Untoro 				</li>
-<li>(CC) C038DSX4841	- Fikra Agha Rabbani Asayanda 	</li>
-<li>(MD) A033DSX3250	- Muhammad Farhan Ramadhan 	</li>	
+
+- (ML) M251DSX0157 	- Azka Faza Dzulqarnain
+ 		
+- (ML) M304DSY0547 	- [Yaasintha La Jopin Arisca Corpputy](https://www.linkedin.com/in/yaasintha/) - [Github](https://github.com/yaasinthariesca)
+
+- (ML) M132DKX4965	- Arief Rizqie Putrananda
+
+- (CC) C303DSX2003 	- Reinhart Untoro
+
+- (CC) C038DSX4841	- Fikra Agha Rabbani Asayanda
+
+- (MD) A033DSX3250	- Muhammad Farhan Ramadhan
