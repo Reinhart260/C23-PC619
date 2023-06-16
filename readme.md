@@ -68,7 +68,7 @@ The project is based from Google Colab (due to limited system requirements of ou
 <li>copy the URL in the local host and paste it in Postman</li>
 <li>test method POST in Postman, with body as form-data, file-type as file, key as file, and value choose downloaded image from https://drive.google.com/drive/folders/1V6YU2dqBAmc9COvpMZGoGLjr9sA8yaLS?usp=sharing with flora and fauna included in variable class_name in main.py(GET method will be "OK" as the output)</li>
 <li>click send and the output will be showed(example: { "prediction": "Chicken" })</li>
-
+## 2. Steps and Requirements to test API in deployed app: https://myservice-mc5ea6mada-uc.a.run.app
 # Our Team
 <p>Team ID		: C23-PC619</P>
 <p>Team Member		: </P>
